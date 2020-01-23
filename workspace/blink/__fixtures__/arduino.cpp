@@ -1264,6 +1264,9 @@ void evaluate(Context ctx) {
 //-----------------------------------------------------------------------------
 namespace xod__gpio__digital_write {
 
+//#pragma XOD evaluate_on_pin disable
+//#pragma XOD evaluate_on_pin enable input_UPD
+
 struct State {
 };
 
@@ -1548,7 +1551,6 @@ void runTransaction() {
             g_transaction.node_5_isOutputDirty_MEM = ctxObj._isOutputDirty_MEM;
 
             // mark downstream nodes dirty
-            g_transaction.node_6_isNodeDirty |= g_transaction.node_5_isOutputDirty_MEM;
         }
 
     }

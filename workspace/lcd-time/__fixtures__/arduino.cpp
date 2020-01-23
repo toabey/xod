@@ -1190,6 +1190,8 @@ void evaluate(Context ctx) {
 //-----------------------------------------------------------------------------
 namespace xod__common_hardware__text_lcd_16x2 {
 
+//#pragma XOD evaluate_on_pin disable
+//#pragma XOD evaluate_on_pin enable input_UPD
 //#pragma XOD error_raise enable
 
 // --- Enter global namespace ---
@@ -1581,7 +1583,6 @@ void runTransaction() {
             // transfer possibly modified dirtiness state from context to g_transaction
 
             // mark downstream nodes dirty
-            g_transaction.node_10_isNodeDirty = true;
         }
 
     }

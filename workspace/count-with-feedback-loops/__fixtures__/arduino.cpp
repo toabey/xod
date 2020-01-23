@@ -1751,6 +1751,8 @@ void evaluate(Context ctx) {
 //-----------------------------------------------------------------------------
 namespace xod__common_hardware__text_lcd_16x2 {
 
+//#pragma XOD evaluate_on_pin disable
+//#pragma XOD evaluate_on_pin enable input_UPD
 //#pragma XOD error_raise enable
 
 // --- Enter global namespace ---
@@ -2472,7 +2474,7 @@ void handleDefers() {
             }
 
             // mark downstream nodes dirty
-            g_transaction.node_15_isNodeDirty |= g_transaction.node_24_isOutputDirty_OUT || node_24.errors.flags;
+            g_transaction.node_15_isNodeDirty |= g_transaction.node_24_isOutputDirty_OUT;
 
             g_transaction.node_24_isNodeDirty = false;
             detail::clearTimeout(&node_24);
@@ -2521,7 +2523,7 @@ void handleDefers() {
             }
 
             // mark downstream nodes dirty
-            g_transaction.node_0_isNodeDirty |= g_transaction.node_25_isOutputDirty_OUT || node_25.errors.flags;
+            g_transaction.node_0_isNodeDirty |= g_transaction.node_25_isOutputDirty_OUT;
 
             g_transaction.node_25_isNodeDirty = false;
             detail::clearTimeout(&node_25);
@@ -2849,7 +2851,6 @@ void runTransaction() {
             // transfer possibly modified dirtiness state from context to g_transaction
 
             // mark downstream nodes dirty
-            g_transaction.node_23_isNodeDirty = true;
         }
 
     }
@@ -2875,7 +2876,6 @@ void runTransaction() {
             // transfer possibly modified dirtiness state from context to g_transaction
 
             // mark downstream nodes dirty
-            g_transaction.node_23_isNodeDirty = true;
         }
 
     }

@@ -1036,6 +1036,9 @@ void evaluate(Context ctx) {
 //-----------------------------------------------------------------------------
 namespace xod__gpio__digital_read {
 
+//#pragma XOD evaluate_on_pin disable
+//#pragma XOD evaluate_on_pin enable input_UPD
+
 struct State {
 };
 
@@ -1141,6 +1144,9 @@ void evaluateTmpl(Context ctx) {
 // xod/core/branch implementation
 //-----------------------------------------------------------------------------
 namespace xod__core__branch {
+
+//#pragma XOD evaluate_on_pin disable
+//#pragma XOD evaluate_on_pin enable input_TRIG
 
 struct State {
 };
@@ -1346,6 +1352,9 @@ void evaluate(Context ctx) {
 // xod/gpio/digital-write implementation
 //-----------------------------------------------------------------------------
 namespace xod__gpio__digital_write {
+
+//#pragma XOD evaluate_on_pin disable
+//#pragma XOD evaluate_on_pin enable input_UPD
 
 struct State {
 };
@@ -1608,8 +1617,8 @@ void runTransaction() {
 
             // mark downstream nodes dirty
             g_transaction.node_4_isNodeDirty |= g_transaction.node_3_isOutputDirty_TICK;
-            g_transaction.node_6_isNodeDirty |= g_transaction.node_3_isOutputDirty_TICK;
             g_transaction.node_5_isNodeDirty |= g_transaction.node_3_isOutputDirty_TICK;
+            g_transaction.node_6_isNodeDirty |= g_transaction.node_3_isOutputDirty_TICK;
             g_transaction.node_7_isNodeDirty |= g_transaction.node_3_isOutputDirty_TICK;
             g_transaction.node_9_isNodeDirty |= g_transaction.node_3_isOutputDirty_TICK;
         }
@@ -1640,7 +1649,6 @@ void runTransaction() {
             g_transaction.node_4_isOutputDirty_DONE = ctxObj._isOutputDirty_DONE;
 
             // mark downstream nodes dirty
-            g_transaction.node_6_isNodeDirty |= g_transaction.node_4_isOutputDirty_SIG;
         }
 
     }
@@ -1669,7 +1677,6 @@ void runTransaction() {
             g_transaction.node_5_isOutputDirty_DONE = ctxObj._isOutputDirty_DONE;
 
             // mark downstream nodes dirty
-            g_transaction.node_7_isNodeDirty |= g_transaction.node_5_isOutputDirty_SIG;
         }
 
     }
@@ -1755,7 +1762,6 @@ void runTransaction() {
             g_transaction.node_8_isOutputDirty_MEM = ctxObj._isOutputDirty_MEM;
 
             // mark downstream nodes dirty
-            g_transaction.node_9_isNodeDirty |= g_transaction.node_8_isOutputDirty_MEM;
         }
 
     }
