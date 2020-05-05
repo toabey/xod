@@ -244,6 +244,7 @@ const addConstructionPatchesAtTheTop = def(
       ),
       R.map(
         R.compose(
+          R.assoc('isConstructor', true),
           convertPatchToTPatch,
           XP.getPatchByPathUnsafe(R.__, originalProject)
         )
@@ -255,6 +256,40 @@ const createTPatches = def(
   'createTPatches :: PatchPath -> Project -> Project -> [TPatch]',
   (entryPath, project, originalProject) =>
     R.compose(
+      // TODO: reuse intermediate results from previous step to speed things up a bit
+      tPatches => {
+        const templatableCustomTypes = R.compose(
+          R.map(R.prop('patchPath')),
+          R.filter(
+            R.pipe(
+              R.prop('inputs'),
+              R.any(({ type }) => XP.CONSTANT_PIN_TYPES.includes(type))
+            )
+          ),
+          R.filter(R.prop('isConstructor'))
+        )(tPatches);
+
+        console.log(templatableCustomTypes);
+        if (R.isEmpty(templatableCustomTypes)) {
+          return tPatches;
+        }
+
+        const isTemplatableCustomTypePin = ({ type }) =>
+          templatableCustomTypes.includes(type); // TODO: memoize?
+
+        return R.map(
+          R.over(
+            R.lensProp('inputs'),
+            R.map(
+              R.when(
+                isTemplatableCustomTypePin,
+                R.assoc('isTemplatableCustomTypePin', true)
+              )
+            )
+          ),
+          tPatches
+        );
+      },
       // Include constructor patches for custom types
       // that are used without an explicit constructor.
       // Otherwise, generated source code won't have

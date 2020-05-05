@@ -62,6 +62,7 @@ const TPatchInput = Model('TPatchInput', {
   type: $.String,
   pinKey: $.String,
   isDirtyable: $.Boolean,
+  // isTemplatableCustomTypePin
 });
 
 export const TPatch = Model('TPatch', {
@@ -76,6 +77,7 @@ export const TPatch = Model('TPatch', {
   inputs: $.Array(TPatchInput),
   impl: $.String,
   requirements: $.Array($.String),
+  // isConstructor
 });
 
 const TNodeOutputDestination = Model('TNodeOutputDestination', {

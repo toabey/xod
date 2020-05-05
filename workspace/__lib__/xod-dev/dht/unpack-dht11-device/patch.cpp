@@ -2,9 +2,11 @@
 struct State {
 };
 
+static const uint8_t const_output_OUT = TypeOfConstructorNodeDEV::port;
+
 {{ GENERATED_CODE }}
 
 void evaluate(Context ctx) {
-    auto dev = getValue<input_DEV>(ctx);
-    emitValue<output_OUT>(ctx, dev->port);
+    // only to trigger evaluation of downstream nodes
+    emitValue<output_OUT>(ctx, const_output_OUT);
 }
