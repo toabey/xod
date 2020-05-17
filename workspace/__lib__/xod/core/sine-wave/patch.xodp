@@ -172,6 +172,16 @@
         "y": -0.05
       },
       "type": "xod/patch-nodes/input-pulse"
+    },
+    {
+      "description": "Use `xod/waves/sine-wave` instead",
+      "id": "ryHXyA4T8",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 1
+      },
+      "type": "xod/patch-nodes/deprecated"
     }
   ]
 }

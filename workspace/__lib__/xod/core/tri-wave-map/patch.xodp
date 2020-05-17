@@ -115,6 +115,15 @@
       "type": "@/subtract"
     },
     {
+      "id": "ByUuyRETI",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/deprecated"
+    },
+    {
       "description": "The number of a funcion cycle. Starts from 0.",
       "id": "HyiTVcFJG",
       "label": "N",
