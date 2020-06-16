@@ -103,7 +103,7 @@
   ],
   "nodes": [
     {
-      "description": "The number of a funcion cycle. Starts from 0.",
+      "description": "The number of a function cycle. Starts from 0.",
       "id": "B1a7B_O1z",
       "label": "N",
       "position": {

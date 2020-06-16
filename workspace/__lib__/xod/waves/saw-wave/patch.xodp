@@ -1,5 +1,5 @@
 {
-  "description": "Generates triangle wave signal",
+  "description": "Generates sawtooth wave signal",
   "links": [
     {
       "id": "B1FgjpVpI",
@@ -73,7 +73,7 @@
       "boundLiterals": {
         "__out__": "True"
       },
-      "description": "Enabled or not. If set to `false` pulses on `UPD` do not change the output value. Effictively that means the generator is paused. Set to `true` again to continue generation.\n",
+      "description": "Enabled or not. If set to `false` pulses on `UPD` do not change the output value. Effectively that means the generator is paused. Set to `true` again to continue generation.\n",
       "id": "B1G-jwgz_M",
       "label": "EN",
       "position": {
@@ -135,7 +135,7 @@
       "type": "xod/patch-nodes/output-number"
     },
     {
-      "description": "The number of a funcion cycle. Starts from 0.",
+      "description": "The number of a function cycle. Starts from 0.",
       "id": "rkN7GvhcI",
       "label": "N",
       "position": {

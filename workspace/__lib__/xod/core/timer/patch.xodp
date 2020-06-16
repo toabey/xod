@@ -49,7 +49,7 @@
       "boundLiterals": {
         "__out__": "True"
       },
-      "description": "Enabled or not. If set to `false` pulses on `UPD` do not change the output value. Effictively that means the timer is paused. Set to `true` again to continue time counting.",
+      "description": "Enabled or not. If set to `false` pulses on `UPD` do not change the output value. Effectively that means the timer is paused. Set to `true` again to continue time counting.",
       "id": "r1W1Tw_yz",
       "label": "EN",
       "position": {
