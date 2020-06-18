@@ -1,0 +1,363 @@
+{
+  "comments": [
+    {
+      "content": "If you take a peek at the insides of wave nodes, you'll find that most consist of a `dividable-timer` utility node and some `XXX-wave-map` node.\n\nBy connecting multiple `-wave-map` nodes to a single timer, you can have several waves that are perfectly in sync with each other, have a phase difference, always N time slower or faster, etc.\n\nAlso, you can reuse `dividable-timer` when implementing your own wave generators.",
+      "id": "rJZLzEtaL",
+      "position": {
+        "units": "slots",
+        "x": 13,
+        "y": 0
+      },
+      "size": {
+        "height": 3,
+        "units": "slots",
+        "width": 7
+      }
+    }
+  ],
+  "links": [
+    {
+      "id": "BJfrX4Y6L",
+      "input": {
+        "nodeId": "r1e8-M4Fa8",
+        "pinKey": "ByfZjQFaI"
+      },
+      "output": {
+        "nodeId": "rkTNQEF6L",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "BkuOQ4FTI",
+      "input": {
+        "nodeId": "H1Id7VF6I",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "B1L-zNYaI",
+        "pinKey": "BkbfIgfuf"
+      }
+    },
+    {
+      "id": "ByG8mVtaI",
+      "input": {
+        "nodeId": "Hy18XNF6L",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "B1L-zNYaI",
+        "pinKey": "BkbfIgfuf"
+      }
+    },
+    {
+      "id": "BySEz4F6U",
+      "input": {
+        "nodeId": "B1L-zNYaI",
+        "pinKey": "Byv-UlMuf"
+      },
+      "output": {
+        "nodeId": "H1WNGVYpL",
+        "pinKey": "ByfGSDjQE"
+      }
+    },
+    {
+      "id": "H13iXNYpL",
+      "input": {
+        "nodeId": "BkGomEt6L",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "r1e8-M4Fa8",
+        "pinKey": "SkgGWsQK68"
+      }
+    },
+    {
+      "id": "HJd57VK6L",
+      "input": {
+        "nodeId": "rkUqm4K6L",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "BkfKXVtTI",
+        "pinKey": "rkWeUCdBDkZ"
+      }
+    },
+    {
+      "id": "Hk9sm4taU",
+      "input": {
+        "nodeId": "SkUj7VYp8",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "B1bGMEKpL",
+        "pinKey": "SkgGWsQK68"
+      }
+    },
+    {
+      "id": "HklH74K68",
+      "input": {
+        "nodeId": "rkTNQEF6L",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "B1L-zNYaI",
+        "pinKey": "BkbfIgfuf"
+      }
+    },
+    {
+      "id": "S1NIm4F6U",
+      "input": {
+        "nodeId": "Bk7N7EtpU",
+        "pinKey": "B1GfLR_SPk-"
+      },
+      "output": {
+        "nodeId": "Hy18XNF6L",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "S1Vt7Nt68",
+      "input": {
+        "nodeId": "BkfKXVtTI",
+        "pinKey": "SklxICdHP1b"
+      },
+      "output": {
+        "nodeId": "HkhOQEtp8",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "S1rYmVKTI",
+      "input": {
+        "nodeId": "HkhOQEtp8",
+        "pinKey": "__in__"
+      },
+      "output": {
+        "nodeId": "B1L-zNYaI",
+        "pinKey": "BkbfIgfuf"
+      }
+    },
+    {
+      "id": "SJFsmVtpU",
+      "input": {
+        "nodeId": "ByxLiXVYa8",
+        "pinKey": "HkXK-dGob"
+      },
+      "output": {
+        "nodeId": "S1O87EK6U",
+        "pinKey": "SkgGWsQK68"
+      }
+    },
+    {
+      "id": "SJK_Q4KTL",
+      "input": {
+        "nodeId": "ryA-zNtp8",
+        "pinKey": "BJnQUR_BwyZ"
+      },
+      "output": {
+        "nodeId": "H1Id7VF6I",
+        "pinKey": "__out__"
+      }
+    },
+    {
+      "id": "Sy9U74YTI",
+      "input": {
+        "nodeId": "S1O87EK6U",
+        "pinKey": "ByfZjQFaI"
+      },
+      "output": {
+        "nodeId": "Bk7N7EtpU",
+        "pinKey": "BkQzLCurwJZ"
+      }
+    },
+    {
+      "id": "rk9GfNYaL",
+      "input": {
+        "nodeId": "B1bGMEKpL",
+        "pinKey": "ByfZjQFaI"
+      },
+      "output": {
+        "nodeId": "ryA-zNtp8",
+        "pinKey": "SyomIRurDJ-"
+      }
+    },
+    {
+      "id": "ryYzfEFaI",
+      "input": {
+        "nodeId": "ryA-zNtp8",
+        "pinKey": "HkqmLAOrD1W"
+      },
+      "output": {
+        "nodeId": "r1OzMVYp8",
+        "pinKey": "ByfGSDjQE"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "boundLiterals": {
+        "rJrg4xzOM": "True"
+      },
+      "id": "B1L-zNYaI",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": 0
+      },
+      "type": "@/dividable-timer"
+    },
+    {
+      "id": "B1bGMEKpL",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 4
+      },
+      "type": "@/sine-wave-map"
+    },
+    {
+      "boundLiterals": {
+        "SJ4zUC_BD1-": "2"
+      },
+      "id": "Bk7N7EtpU",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 3
+      },
+      "type": "xod/core/multiply"
+    },
+    {
+      "id": "BkGomEt6L",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 5
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "BkfKXVtTI",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 3
+      },
+      "type": "xod/math/floor"
+    },
+    {
+      "id": "ByxLiXVYa8",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 5
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "H1Id7VF6I",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/jumper"
+    },
+    {
+      "boundLiterals": {
+        "ByfGSDjQE": "4"
+      },
+      "id": "H1WNGVYpL",
+      "position": {
+        "units": "slots",
+        "x": 7,
+        "y": -1
+      },
+      "type": "xod/debug/tweak-number"
+    },
+    {
+      "id": "HkhOQEtp8",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/jumper"
+    },
+    {
+      "id": "Hy18XNF6L",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/jumper"
+    },
+    {
+      "id": "S1O87EK6U",
+      "position": {
+        "units": "slots",
+        "x": 8,
+        "y": 4
+      },
+      "type": "@/sine-wave-map"
+    },
+    {
+      "id": "SkUj7VYp8",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 5
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "boundLiterals": {
+        "ByfGSDjQE": "0.5"
+      },
+      "id": "r1OzMVYp8",
+      "position": {
+        "units": "slots",
+        "x": 6,
+        "y": 2
+      },
+      "type": "xod/debug/tweak-number"
+    },
+    {
+      "id": "r1e8-M4Fa8",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 4
+      },
+      "type": "@/sine-wave-map"
+    },
+    {
+      "id": "rkTNQEF6L",
+      "position": {
+        "units": "slots",
+        "x": 3,
+        "y": 2
+      },
+      "type": "xod/patch-nodes/jumper"
+    },
+    {
+      "id": "rkUqm4K6L",
+      "position": {
+        "units": "slots",
+        "x": 11,
+        "y": 5
+      },
+      "type": "xod/debug/watch"
+    },
+    {
+      "id": "ryA-zNtp8",
+      "position": {
+        "units": "slots",
+        "x": 5,
+        "y": 3
+      },
+      "type": "xod/core/add"
+    }
+  ]
+}

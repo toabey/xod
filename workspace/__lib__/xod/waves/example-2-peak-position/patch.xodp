@@ -84,7 +84,7 @@
         "x": 4,
         "y": 2
       },
-      "type": "@/variable-triangle-wave"
+      "type": "@/tri-wave"
     },
     {
       "boundLiterals": {

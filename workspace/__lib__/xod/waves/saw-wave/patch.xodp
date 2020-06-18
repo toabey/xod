@@ -55,17 +55,6 @@
         "nodeId": "HkEkipVp8",
         "pinKey": "r1ljgpXjOM"
       }
-    },
-    {
-      "id": "ryslopVpU",
-      "input": {
-        "nodeId": "rkN7GvhcI",
-        "pinKey": "__in__"
-      },
-      "output": {
-        "nodeId": "HkEkipVp8",
-        "pinKey": "HJagfP258"
-      }
     }
   ],
   "nodes": [
@@ -121,7 +110,7 @@
         "x": 0,
         "y": 1
       },
-      "type": "@/variable-triangle-wave"
+      "type": "@/tri-wave"
     },
     {
       "description": "The signal value in [0, 1] range. Starts from 0.",
@@ -130,17 +119,6 @@
       "position": {
         "units": "slots",
         "x": 0,
-        "y": 2
-      },
-      "type": "xod/patch-nodes/output-number"
-    },
-    {
-      "description": "The number of a function cycle. Starts from 0.",
-      "id": "rkN7GvhcI",
-      "label": "N",
-      "position": {
-        "units": "slots",
-        "x": 1,
         "y": 2
       },
       "type": "xod/patch-nodes/output-number"

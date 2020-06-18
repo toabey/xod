@@ -2,17 +2,6 @@
   "description": "Generates sine wave (sinusoid) signal",
   "links": [
     {
-      "id": "BJzNeR4T8",
-      "input": {
-        "nodeId": "HJW821A4aL",
-        "pinKey": "SklxICdHP1b"
-      },
-      "output": {
-        "nodeId": "HkQuDlfuz",
-        "pinKey": "BkbfIgfuf"
-      }
-    },
-    {
       "id": "BkHtDlMdf",
       "input": {
         "nodeId": "HkQuDlfuz",
@@ -35,36 +24,14 @@
       }
     },
     {
-      "id": "Hk1a1ANaL",
+      "id": "Hy3Xs7K6I",
       "input": {
-        "nodeId": "SJaUxv258",
-        "pinKey": "__in__"
+        "nodeId": "H1tXsXKTI",
+        "pinKey": "ByfZjQFaI"
       },
       "output": {
-        "nodeId": "HJW821A4aL",
-        "pinKey": "rkWeUCdBDkZ"
-      }
-    },
-    {
-      "id": "HkmpyC4pI",
-      "input": {
-        "nodeId": "HyaDDeM_M",
-        "pinKey": "__in__"
-      },
-      "output": {
-        "nodeId": "HJMUhkCNaI",
-        "pinKey": "H12bIR_SPyZ"
-      }
-    },
-    {
-      "id": "HyN8h10ETU",
-      "input": {
-        "nodeId": "HJMUhkCNaI",
-        "pinKey": "BJlzICOSv1-"
-      },
-      "output": {
-        "nodeId": "SkInyAE68",
-        "pinKey": "Bkpwy22I-"
+        "nodeId": "HkQuDlfuz",
+        "pinKey": "BkbfIgfuf"
       }
     },
     {
@@ -79,17 +46,6 @@
       }
     },
     {
-      "id": "SJP7lCVpI",
-      "input": {
-        "nodeId": "H1x8210VaU",
-        "pinKey": "B1GfLR_SPk-"
-      },
-      "output": {
-        "nodeId": "S1bkxCEaU",
-        "pinKey": "B1x2RV3eZ"
-      }
-    },
-    {
       "id": "r1IYDezOG",
       "input": {
         "nodeId": "HkQuDlfuz",
@@ -101,25 +57,14 @@
       }
     },
     {
-      "id": "rJSmxC4TL",
+      "id": "ry6msXK68",
       "input": {
-        "nodeId": "H1x8210VaU",
-        "pinKey": "SJ4zUC_BD1-"
+        "nodeId": "HyaDDeM_M",
+        "pinKey": "__in__"
       },
       "output": {
-        "nodeId": "HkQuDlfuz",
-        "pinKey": "BkbfIgfuf"
-      }
-    },
-    {
-      "id": "rkmU21AN6I",
-      "input": {
-        "nodeId": "SkInyAE68",
-        "pinKey": "HJiwJ33LW"
-      },
-      "output": {
-        "nodeId": "H1x8210VaU",
-        "pinKey": "BkQzLCurwJZ"
+        "nodeId": "H1tXsXKTI",
+        "pinKey": "SkgGWsQK68"
       }
     }
   ],
@@ -139,40 +84,13 @@
       "type": "xod/patch-nodes/input-boolean"
     },
     {
-      "boundLiterals": {
-        "B1GfLR_SPk-": "0",
-        "SJ4zUC_BD1-": "0"
-      },
-      "id": "H1x8210VaU",
+      "id": "H1tXsXKTI",
       "position": {
         "units": "slots",
-        "x": -1,
-        "y": 3
+        "x": 0,
+        "y": 2
       },
-      "type": "xod/core/multiply"
-    },
-    {
-      "boundLiterals": {
-        "HJCWLAdSwyW": "-1",
-        "rkpbU0OrwyZ": "1",
-        "ry1z8CuBDy-": "1"
-      },
-      "id": "HJMUhkCNaI",
-      "position": {
-        "units": "slots",
-        "x": -1,
-        "y": 5
-      },
-      "type": "xod/math/map"
-    },
-    {
-      "id": "HJW821A4aL",
-      "position": {
-        "units": "slots",
-        "x": 4,
-        "y": 3
-      },
-      "type": "xod/math/floor"
+      "type": "@/sine-wave-map"
     },
     {
       "id": "HkQuDlfuz",
@@ -189,8 +107,8 @@
       "label": "OUT",
       "position": {
         "units": "slots",
-        "x": -1,
-        "y": 6
+        "x": 0,
+        "y": 3
       },
       "type": "xod/patch-nodes/output-number"
     },
@@ -210,19 +128,6 @@
     },
     {
       "boundLiterals": {
-        "B1x2RV3eZ": "6.283185307179"
-      },
-      "id": "S1bkxCEaU",
-      "label": "2𝜋",
-      "position": {
-        "units": "slots",
-        "x": -1,
-        "y": 2
-      },
-      "type": "xod/core/constant-number"
-    },
-    {
-      "boundLiterals": {
         "__out__": "Continuously"
       },
       "description": "Triggers the generator update. It will update the output values.",
@@ -234,26 +139,6 @@
         "y": 0
       },
       "type": "xod/patch-nodes/input-pulse"
-    },
-    {
-      "description": "The number of a function cycle. Starts from 0.",
-      "id": "SJaUxv258",
-      "label": "N",
-      "position": {
-        "units": "slots",
-        "x": 4,
-        "y": 6
-      },
-      "type": "xod/patch-nodes/output-number"
-    },
-    {
-      "id": "SkInyAE68",
-      "position": {
-        "units": "slots",
-        "x": -1,
-        "y": 4
-      },
-      "type": "xod/math/cos"
     },
     {
       "description": "Resets the current `OUT` and `N` to zero.",
